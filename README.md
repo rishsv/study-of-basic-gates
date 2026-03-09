@@ -1,3 +1,6 @@
+#EX-01 Study-of-basic-gates
+#DATE: 09-03-2026
+
 ### study-of-basic-gates
 
 **AIM:** 
@@ -63,17 +66,45 @@ Y= A⊕B
 
 
 **PROGRAM**
+'''
+module LogicGates1(a,b,c);
 
-Program for logic gates and verify its truth table in quartus using Verilog programming
+input a;
 
- Developed by: RegisterNumber: 
+input b;
+
+output [6:0] c;
+
+assign c[0]=a&b;
+
+assign c[1]=a|b;
+
+assign c[2]=~(a&b);
+
+assign c[3]=~(a|b);
+
+assign c[4]=a^b;
+
+assign c[5]=~(a^b);
+
+assign c[6]=~a;
+
+endmodule
+'''
+
+ Developed by: Rishwanth S V RegisterNumber: 212225040338
  
 **Logic symbol & Truthtable**
+<img width="806" height="170" alt="398738127-1c091aee-f658-49e1-ba22-801e5dfe40bf" src="https://github.com/user-attachments/assets/1d52598d-83d8-4457-9cea-4bd94359c44f" />
 
 **RTL realization Output:** 
+<img width="891" height="812" alt="398739401-fe2a573a-2891-409c-a128-62f37e4de1f8" src="https://github.com/user-attachments/assets/55f0cb82-314a-4354-acda-ead7813bdc3d" />
 
 **RTL**
+<img width="1032" height="472" alt="398739221-3cc49cdf-35fd-440a-8ee6-40b1a0f77571" src="https://github.com/user-attachments/assets/e1df2b7d-8c21-457c-86d3-b19bd7a0ba3f" />
 
 **Result:**
+Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
+
 
 
